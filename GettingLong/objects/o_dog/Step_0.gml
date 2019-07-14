@@ -16,19 +16,17 @@ if (keyboard_check_pressed(vk_down)) {
 
 if (state == states.walking) {
 	
-	walk_anim_time += delta_time / 1000000;
-	
-	var t = walk_anim_time / walk_anim_length;
-	
-	if (t >= 1) {
-		walk_anim_time = 0;
-		t = 1;
-		state = states.idle;		
-	}
-	
-	var _x = lerp(x_from, x_to, t);
-	var _y = lerp(y_from, y_to, t);
+	var _x = lerp(x_from, x_to, 1);
+	var _y = lerp(y_from, y_to, 1);
 	
 	x = _x * tile_width;
 	y = _y * tile_height;
+	
+	state = states.idle;
+}
+
+// On Item choppage : ds_list_add(snake_item,[x,y]);
+if (keyboard_check_pressed(vk_space)) {
+	ds_list_add(snake_item,[x,y]);
+	scr_move(directions.right);
 }
