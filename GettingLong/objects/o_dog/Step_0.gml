@@ -19,6 +19,8 @@ if (state == states.walking) {
 	var _x = lerp(x_from, x_to, 1);
 	var _y = lerp(y_from, y_to, 1);
 	
+	
+	
 	x = _x * tile_width;
 	y = _y * tile_height;
 	
@@ -27,6 +29,6 @@ if (state == states.walking) {
 
 // On Item choppage : ds_list_add(snake_item,[x,y]);
 if (keyboard_check_pressed(vk_space)) {
-	ds_list_add(snake_item,[x,y]);
+	ds_list_add(snake_item,[x_from,y_from]);
 	scr_move(directions.right);
 }

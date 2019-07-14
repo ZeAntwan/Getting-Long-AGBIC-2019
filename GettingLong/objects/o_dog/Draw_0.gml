@@ -5,6 +5,6 @@ for (var i = 0; i < ds_list_size(snake_item); i++) {
 	var ix = c[0];
 	var iy = c[1];
 	
-	draw_sprite(sprite_index,image_index,ix,iy);
+	draw_sprite(sprite_index,image_index,ix* tile_width ,iy* tile_width);
 }
 draw_self();

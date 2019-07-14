@@ -12,5 +12,5 @@ y_pos = y div tile_height;
 x_from = x_pos;
 y_from = y_pos;
 
-snake_length = 0;
+
 snake_item = ds_list_create();
