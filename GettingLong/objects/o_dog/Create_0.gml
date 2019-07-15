@@ -4,13 +4,10 @@ enum states {
 	walking
 }
 
-state = states.idle;
 
-x_pos = x div tile_width;
-y_pos = y div tile_height;
-
-x_from = x_pos;
-y_from = y_pos;
+debug_item = false;
 
 
 snake_item = ds_list_create();
+snake_dir = ds_list_create();
+snake_len = 0;

@@ -1,34 +1,49 @@
 /// @description Move
 
-if (keyboard_check_pressed(vk_right)) {
-	scr_move(directions.right);
-}
-if (keyboard_check_pressed(vk_up)) {
-	scr_move(directions.up);
-}
-if (keyboard_check_pressed(vk_left)) {
-	scr_move(directions.left);
-}
-if (keyboard_check_pressed(vk_down)) {
-	scr_move(directions.down);
+
+if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down)) {
+	
+	var dx = keyboard_check_pressed(vk_right)-keyboard_check_pressed(vk_left)
+	var dy = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up)
+	
+	if (snake_len != 0) {
+		ds_list_insert(snake_dir,0,last_dir)
+		for (var i = ds_list_size(snake_dir)-1; i > snake_len; i--) {
+			ds_list_delete(snake_dir,i);
+		}
+		
+		for (var s = 0; s < ds_list_size(snake_item); s++) {
+			var item = snake_item[| s];
+			var c = snake_dir[| s];
+			var cx = c[0]
+			var cy = c[1]
+			
+			item.x+= cx * tile_width;
+			item.y+= cy * tile_height;
+		}
+	}
+	
+	if (debug_item) {
+		var item = instance_create_layer(x,y,"Parts",o_dog_part);
+		ds_list_insert(snake_item,0,item);
+		snake_len++
+	}
+
+	x+= dx * tile_width;
+	y+= dy * tile_height;
+	
+	last_dir = [dx,dy];
+
 }
 
-
-if (state == states.walking) {
-	
-	var _x = lerp(x_from, x_to, 1);
-	var _y = lerp(y_from, y_to, 1);
-	
-	
-	
-	x = _x * tile_width;
-	y = _y * tile_height;
-	
-	state = states.idle;
-}
-
-// On Item choppage : ds_list_add(snake_item,[x,y]);
 if (keyboard_check_pressed(vk_space)) {
-	ds_list_add(snake_item,[x_from,y_from]);
-	scr_move(directions.right);
+	debug_item = !debug_item;
 }
+
+
+
+
+
+
+
+
