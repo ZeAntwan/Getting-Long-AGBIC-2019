@@ -1,10 +1,17 @@
 /// @description Move
 
 
-if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down)) {
+if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor keyboard_check_pressed(vk_up) xor keyboard_check_pressed(vk_down)) {
 	
 	var dx = keyboard_check_pressed(vk_right)-keyboard_check_pressed(vk_left)
 	var dy = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up)
+	
+	// Check collision here
+	var col_tile = tilemap_get_at_pixel(col_tilemap, x + dx*tile_width, y + dy*tile_height)
+	if (col_tile != 0) return;
+	// If no collision, check for item
+	
+	// Move the snake
 	
 	if (snake_len != 0) {
 		ds_list_insert(snake_dir,0,last_dir)
