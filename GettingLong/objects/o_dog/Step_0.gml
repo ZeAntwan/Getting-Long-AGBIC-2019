@@ -6,31 +6,32 @@ if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor key
 	var dx = keyboard_check_pressed(vk_right)-keyboard_check_pressed(vk_left)
 	var dy = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up)
 	
+	// Check if direction is not a reverse move
+	if (array_equals(last_dir,[-dx,-dy])) {
+		show_debug_message("REVERSE");
+		// Remove last added snake part (to condition if item was picked up)
+		if (ds_list_size(snake_item) > 1) {
+			var item = ds_list_size(snake_item)-1
+			instance_destroy(snake_item[| item]);
+			ds_list_delete(snake_item,item);
+		}
+		scr_snake_move(-1);
+		scr_move(dx,dy)
+		return;
+	}
 	// Check collision here
 	var col_tile = tilemap_get_at_pixel(col_tilemap, x + dx*tile_width, y + dy*tile_height)
-	if (col_tile != 0) return;
-	// If no collision, check for item
-	
+	var col_part = place_meeting(x + dx*tile_width, y + dy*tile_height, o_dog_part)
+	if (col_tile != 0 or col_part) return;
 	// Move the snake
 	
-	if (snake_len != 0) {
-		ds_list_insert(snake_dir,0,last_dir)
-		for (var i = ds_list_size(snake_dir)-1; i > snake_len; i--) {
-			ds_list_delete(snake_dir,i);
-		}
-		
-		for (var s = 0; s < ds_list_size(snake_item); s++) {
-			var item = snake_item[| s];
-			var c = snake_dir[| s];
-			var cx = c[0]
-			var cy = c[1]
-			
-			item.x+= cx * tile_width;
-			item.y+= cy * tile_height;
-		}
-	}
+	scr_snake_move(1);
 	
-	if (debug_item) {
+	// If Collision, check for item
+	var col_item = place_meeting(x + dx * tile_width, y + dy * tile_height, o_item);
+	
+	// Add snake part
+	if (debug_item or col_item) {
 		if (snake_len != 0) {
 			var refitem = snake_item[| snake_len-1]
 			var refc = snake_dir[| snake_len-1]
@@ -47,11 +48,8 @@ if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor key
 		snake_len++
 	}
 
-	x+= dx * tile_width;
-	y+= dy * tile_height;
-	
-	last_dir = [dx,dy];
-
+	scr_move(dx,dy)
+	show_debug_message(last_dir)
 }
 
 if (keyboard_check_pressed(vk_space)) {

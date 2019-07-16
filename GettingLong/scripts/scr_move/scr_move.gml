@@ -1,8 +1,10 @@
 ///@desc
 ///@params direction
 
-var dir = argument0;
-var c = global.components[dir];
-var dx = c[0];
-var dy = c[1];
+var dx = argument0;
+var dy = argument1
 
+x+= dx * tile_width;
+y+= dy * tile_height;
+	
+last_dir = [dx,dy];
