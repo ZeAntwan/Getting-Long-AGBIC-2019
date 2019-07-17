@@ -7,7 +7,17 @@ enum states {
 
 debug_item = false;
 
-last_dir = [1,0]
+last_dir = [1,0];
+
+move_mem = ds_list_create();
+ds_list_insert(move_mem,0,[x,y]);
+
+
+
+
+
+
+
 
 snake_dir = ds_list_create();
 
