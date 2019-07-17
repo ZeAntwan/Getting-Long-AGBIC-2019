@@ -1,18 +1,15 @@
 ///@desc
 ///@param
 
+var snakelist_size = ds_list_size(snake_item)
 
-if (snake_len != 0) {
-	var refitem = snake_item[| snake_len-1]
-	var refc = snake_dir[| snake_len-1]
+if (snakelist_size != 0) {
+	var refc = move_mem[| snakelist_size]
 	var refcx = refc[0]
 	var refcy = refc[1]
-	var px = refitem.x - refcx * tile_width 
-	var py = refitem.y - refcy * tile_height
-	var item = instance_create_layer(px,py,"Parts",o_dog_part);
+	var item = instance_create_layer(refcx,refcy,"Parts",o_dog_part);
 } else {
 	var item = instance_create_layer(x,y,"Parts",o_dog_part);
 }
 		
 ds_list_add(snake_item,item);
-snake_len++
