@@ -1,7 +1,7 @@
 ///@desc
 ///@param
 
-if (snake_len != 0) {
+if (ds_list_size(snake_item) > 0) {
 		
 		for (var s = 0; s < ds_list_size(snake_item); s++) {
 			var item = snake_item[| s];

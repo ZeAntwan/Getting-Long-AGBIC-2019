@@ -1,12 +1,10 @@
 ///@desc
-///@params direction
+///@params x,y
 
 ds_list_insert(move_mem,0,[x,y]);
 
-var dx = argument0;
-var dy = argument1
+var newx = argument0;
+var newy = argument1
 
-x+= dx * tile_width;
-y+= dy * tile_height;
-
-last_dir = [dx,dy];
+x = newx;
+y = newy;
