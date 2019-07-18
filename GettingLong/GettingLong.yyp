@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "393e98a5-c5cf-46a5-a52b-2eb539d9e048",
+            "Value": {
+                "id": "b786bad0-a5a6-4010-adca-b0fa1336dd00",
+                "resourcePath": "sprites\\s_dog_part_straight1\\s_dog_part_straight1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "40ee2c32-fdd2-4ced-b83a-c0a3f5a3a544",
             "Value": {
                 "id": "3e434ad6-5fff-4157-85b2-7c3f42a1f66d",
@@ -66,7 +74,7 @@
             "Key": "4abb93c1-4f30-400b-bbec-1f8553e989c5",
             "Value": {
                 "id": "2f86a88d-9328-422a-8394-90857b84537c",
-                "resourcePath": "sprites\\s_dog_part\\s_dog_part.yy",
+                "resourcePath": "sprites\\s_dog_part_straight\\s_dog_part_straight.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -228,6 +236,14 @@
                 "id": "08a3559f-9d8a-454a-8e01-6e3ad3f7cc36",
                 "resourcePath": "scripts\\scr_snake_remove\\scr_snake_remove.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c60f19bf-07ae-49d1-b96e-47ce25f3cd99",
+            "Value": {
+                "id": "209c2966-78c3-497c-b178-3f9735ad58fa",
+                "resourcePath": "sprites\\s_dog_part_curve\\s_dog_part_curve.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
