@@ -1,9 +1,13 @@
 /// @description Player Init
 enum states {
 	idle,
-	walking
+	walking,
+	reverse
 }
 
+start_pos = [x,y];
+
+dog_state = states.idle;
 
 debug_item = false;
 

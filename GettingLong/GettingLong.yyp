@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "26572f9c-49ee-4e0f-9a6f-c1af41d08749",
+            "Value": {
+                "id": "3a834cd0-7246-46f1-bb77-0f8af2c97ba9",
+                "resourcePath": "scripts\\scr_reset\\scr_reset.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "36b351ed-b269-4019-b306-61ea846a79fc",
             "Value": {
                 "id": "af11feba-79e9-4e0a-b509-d3d105ffbb2a",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "9167eff8-911e-4409-85fe-f931b90f0d1c",
+            "Value": {
+                "id": "2e3ace25-8688-4933-b139-5f8d25285596",
+                "resourcePath": "objects\\o_gamemanager\\o_gamemanager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9407ae9e-b1fe-4517-a80b-c190ac9aba5d",
             "Value": {
                 "id": "2675d6a7-a472-445f-a805-67af0850ec5e",
@@ -204,6 +220,14 @@
                 "id": "5215e8cf-2573-402f-aa75-627454be2a54",
                 "resourcePath": "tilesets\\ts_mask\\ts_mask.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "be675e77-9633-42e7-92ee-08cddf752d27",
+            "Value": {
+                "id": "08a3559f-9d8a-454a-8e01-6e3ad3f7cc36",
+                "resourcePath": "scripts\\scr_snake_remove\\scr_snake_remove.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -299,8 +323,10 @@
         "d8f03d06-a71b-45ca-9cb3-a419b8e04003",
         "9407ae9e-b1fe-4517-a80b-c190ac9aba5d",
         "6fd5027f-d4ed-4c00-896c-57d164eb19a7",
+        "be675e77-9633-42e7-92ee-08cddf752d27",
         "cbf1170c-fbe8-43d3-b356-700d2427b0fc",
-        "a062a91c-ed8a-42c2-9adc-3fa4805ddddb"
+        "a062a91c-ed8a-42c2-9adc-3fa4805ddddb",
+        "26572f9c-49ee-4e0f-9a6f-c1af41d08749"
     ],
     "tutorial": ""
 }
