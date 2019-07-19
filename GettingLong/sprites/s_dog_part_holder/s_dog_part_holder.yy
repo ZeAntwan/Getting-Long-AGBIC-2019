@@ -2,7 +2,7 @@
     "id": "393e98a5-c5cf-46a5-a52b-2eb539d9e048",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_dog_part_straight1",
+    "name": "s_dog_part_holder",
     "For3D": false,
     "HTile": false,
     "VTile": false,
