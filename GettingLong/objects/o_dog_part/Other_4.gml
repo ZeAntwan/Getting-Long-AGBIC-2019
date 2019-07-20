@@ -1,4 +1,2 @@
 /// @description Insérez la description ici
-
-if (state != itemstate.used) draw_self();
-
+event_user(2);

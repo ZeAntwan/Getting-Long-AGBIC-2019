@@ -14,3 +14,6 @@ if (snakelist_size != 0) {
 	
 ds_list_add(snake_item,item);
 item.position = snakelist_size;
+with (item) {
+	event_user(2);
+}
