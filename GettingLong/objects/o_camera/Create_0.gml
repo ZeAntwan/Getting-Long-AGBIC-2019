@@ -14,4 +14,4 @@ view_set_camera(0, camera);
 
 transition = false;
 
-transition_done = false;
+lerp_value = .15;

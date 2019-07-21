@@ -1,8 +1,7 @@
 /// @description Insérez la description ici
 
-if (keyboard_check_pressed(vk_space)) o_camera.transition = true;
+if (keyboard_check_pressed(vk_space)) global.targetlevel = room+1;
 
-if (o_camera.y > 479 and o_camera.transition = true) {
-	room_goto_next()
-	exit;
-};
+if (global.currentlevel != global.targetlevel) {
+	scr_roomchange(global.targetlevel);
+}

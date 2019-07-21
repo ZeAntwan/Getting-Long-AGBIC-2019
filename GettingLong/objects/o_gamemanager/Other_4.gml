@@ -5,3 +5,5 @@ if(instance_number(object_index) > 1) {
 }
 
 o_camera.transition = false;
+
+global.currentlevel = room;
