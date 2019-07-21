@@ -13,8 +13,6 @@ debug_item = false;
 
 last_move = [0,0];
 
-move_count = 0;
-
 move_mem = ds_list_create();
 
 snake_item = ds_list_create();

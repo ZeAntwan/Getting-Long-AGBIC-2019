@@ -10,13 +10,14 @@ if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor key
 	var next_y = y + dy * tile_height;
 
 	// Move
-	if ((move_count > 0) and (array_equals(move_mem[| 0],[next_x,next_y]))) {
+	if ((global.movecount > 0) and (array_equals(move_mem[| 0],[next_x,next_y]))) {
 		// If wanted move is the reverse of previous move : Reverse
 			dog_state = states.reverse;
+			scr_itemcheck(x,y);
 			show_debug_message("REVERSE")
 			scr_reverse()
 			scr_snake_move();	
-			move_count--;
+			global.movecount--;
 	} else {
 		// Else : Normal Move
 		dog_state = states.walking;
@@ -28,30 +29,11 @@ if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor key
 		scr_move(next_x,next_y);
 		scr_snake_move();
 		last_move = [dx,dy];
-		move_count++;
+		global.movecount++;
 		
 	}
 	
-	// If Collision, check for item
-	var col_item = instance_place(x, y, o_item);
-
-	// Add snake part if ok
-	if (col_item != noone) {
-		if (dog_state == states.walking) {
-			if (col_item.state == itemstate.idle) {
-				col_item.state = itemstate.using;
-			}
-		}
-		if (dog_state == states.reverse) {
-			if (col_item.state == itemstate.used) {
-				col_item.state = itemstate.reverse;
-			}
-		}
-		
-		// TODO : Record when snakpart was added in move_count to remove it next time.
-		// Maybe add it to the "Snake" list [item,move_count] and each reverse, check ?
-		// Or maybe create a list that records event based on the "Move Count" index ?
-	}
+	scr_itemcheck(x,y);
 	
 	
 	dog_state = states.idle;	
