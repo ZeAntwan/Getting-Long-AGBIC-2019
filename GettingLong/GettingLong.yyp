@@ -39,11 +39,27 @@
             }
         },
         {
+            "Key": "0b7f9867-1627-4d8d-9afb-028791600e6e",
+            "Value": {
+                "id": "dfd1ca0a-bcce-4370-9203-54ea91a96420",
+                "resourcePath": "objects\\o_menuinput\\o_menuinput.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "26572f9c-49ee-4e0f-9a6f-c1af41d08749",
             "Value": {
                 "id": "3a834cd0-7246-46f1-bb77-0f8af2c97ba9",
                 "resourcePath": "scripts\\scr_reset\\scr_reset.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "278afa05-957c-43fc-89a0-adcd255cd715",
+            "Value": {
+                "id": "9d19b887-abd0-49b3-a25e-9a0e8a2ade75",
+                "resourcePath": "rooms\\rm_menu\\rm_menu.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -372,14 +388,6 @@
                 "id": "66b542a3-d9f5-4232-aa35-de07b299bb94",
                 "resourcePath": "scripts\\MACRO\\MACRO.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "df7f32cf-0253-4627-9b78-509e49da6d18",
-            "Value": {
-                "id": "3e165d58-b679-4a77-bdbd-3a2eaade98a1",
-                "resourcePath": "rooms\\rm_menu\\rm_menu.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

@@ -13,3 +13,5 @@ camera = camera_create_view(x, y, 480, 480, 0, -1, -1, -1, 32, 32);
 view_set_camera(0, camera);
 
 transition = false;
+
+transition_done = false;
