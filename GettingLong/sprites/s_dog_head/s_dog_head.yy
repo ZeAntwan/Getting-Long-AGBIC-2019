@@ -2,7 +2,7 @@
     "id": "86c6f114-5788-4b9a-9f1f-da0c9fe6c19e",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_dog",
+    "name": "s_dog_head",
     "For3D": false,
     "HTile": false,
     "VTile": false,

@@ -10,10 +10,12 @@ else
 if (position == size-1) //LAST
 {
 	cur_color = c_green;
+	cur_sprite = s_dog_ass;
 	back = noone;
 }
 else 
 {
+	cur_sprite = s_dog_part_straight;
 	back =  o_dog.snake_item[| position+1];
 	cur_color = c_white;
 }

@@ -23,7 +23,7 @@ if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor key
 		dog_state = states.walking;
 		show_debug_message([dx,dy])
 		var col_tile = tilemap_get_at_pixel(col_tilemap, x + dx*tile_width, y + dy*tile_height)
-		var col_part = place_meeting(x + dx*tile_width/2, y + dy*tile_height/2, o_dog_part)
+		var col_part = place_meeting(x + dx*tile_width/2, y + dy*tile_height/2, o_obstacle)
 		if (col_tile != 0 or col_part) return;
 		
 		scr_move(next_x,next_y);
