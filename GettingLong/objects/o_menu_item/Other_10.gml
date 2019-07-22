@@ -1,3 +1,4 @@
 /// @description ACTION
 show_debug_message("ACTION")
-global.targetlevel = global.levellist[|0];
+
+global.targetlevel = roomtarget;

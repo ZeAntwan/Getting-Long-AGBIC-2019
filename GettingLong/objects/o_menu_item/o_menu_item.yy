@@ -79,6 +79,20 @@
             "value": "Default",
             "varName": "text",
             "varType": 2
+        },
+        {
+            "id": "0686b907-b4d9-426f-8a91-fbe96af246c0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 512,
+            "value": "rm_menu",
+            "varName": "roomtarget",
+            "varType": 5
         }
     ],
     "solid": false,
