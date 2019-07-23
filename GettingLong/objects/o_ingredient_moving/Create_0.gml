@@ -1,5 +1,5 @@
 /// @description Insérez la description ici
-currentmove = global.movecount;
+currentmove = 0;
 
 memory = ds_stack_create();
 

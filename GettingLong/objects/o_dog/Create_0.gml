@@ -2,7 +2,8 @@
 enum states {
 	idle,
 	walking,
-	reverse
+	reverse,
+	freeze
 }
 
 start_pos = [x,y];

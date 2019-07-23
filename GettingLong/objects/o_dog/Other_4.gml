@@ -1,4 +1,5 @@
 /// @description Check for existing Dog Parts
+dog_state = states.idle;
 
 if (instance_exists(o_dog_part)) 
 {
