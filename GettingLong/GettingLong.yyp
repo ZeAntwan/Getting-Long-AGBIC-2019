@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "de2e866c-26b4-4865-8720-55ebaa48ed96",
+            "Value": {
+                "id": "9299333a-bbb9-4fe4-9dea-1aca5ce2d61f",
+                "resourcePath": "objects\\o_menu_exit\\o_menu_exit.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e390d05f-053e-4c78-bbfb-5ec109321114",
             "Value": {
                 "id": "6faedc9c-0ecb-46c7-986c-47e9e45a2fb9",

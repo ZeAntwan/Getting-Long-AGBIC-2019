@@ -16,6 +16,9 @@ if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor key
 			event_user(0);	
 		}
 	}
+	if (dx == -1) {
+		global.targetlevel = rm_menu;
+	}
 	
 
 }
