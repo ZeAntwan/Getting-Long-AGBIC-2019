@@ -11,7 +11,8 @@
         "7ccb4341-8346-43b7-b96e-e443c21b0ed9",
         "d693d461-ec63-4d8f-97be-d27f4de2da5f",
         "46546ebc-1f9b-4840-a35f-93f5dcd7e7e0",
-        "35a1252d-1ca1-4fde-875c-964c02f7c86c"
+        "35a1252d-1ca1-4fde-875c-964c02f7c86c",
+        "4c996007-ae5a-46c0-ba1a-06c6167a8233"
     ],
     "IsDnD": false,
     "layers": [
@@ -71,39 +72,30 @@
             "visible": true
         },
         {
-            "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Background",
-            "id": "f3ffa829-888f-4a01-914d-3c37b17ee41c",
-            "animationFPS": 15,
-            "animationSpeedType": "0",
-            "colour": { "Value": 4294967295 },
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Instances_1",
+            "id": "7d763659-eeeb-4279-94ca-bab3ecacaa8f",
             "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
-            "hspeed": 0.2,
-            "htiled": true,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
             "inheritVisibility": false,
+            "instances": [
+{"name": "inst_5FBF769","id": "4c996007-ae5a-46c0-ba1a-06c6167a8233","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_5FBF769","objId": "a1a79f89-be65-41e6-8569-e3e5c045547b","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 0,"y": 0}
+            ],
             "layers": [
 
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
-            "modelName": "GMRBackgroundLayer",
+            "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
-            "spriteId": "40b34f5b-d732-41b6-a699-09b8e2b36179",
-            "stretch": false,
-            "userdefined_animFPS": false,
             "userdefined_depth": false,
-            "visible": true,
-            "vspeed": -0.2,
-            "vtiled": true,
-            "x": 0,
-            "y": 0
+            "visible": true
         }
     ],
     "modelName": "GMRoom",
