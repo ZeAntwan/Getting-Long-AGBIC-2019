@@ -8,3 +8,5 @@ enum itemstate {
 }
 
 state = itemstate.idle;
+
+move_used = 0;
