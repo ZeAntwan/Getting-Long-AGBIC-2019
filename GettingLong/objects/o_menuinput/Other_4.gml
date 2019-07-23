@@ -2,7 +2,7 @@
 
 ds_list_clear(menu_item);
 
-if (room = rm_menu) {
+if (room == rm_menu or room == rm_levelselect) {
 	if (instance_exists(o_menu_item)) {
 		for (var p = 0; p < 10; p++) {
 			for (var i = 0; i < instance_number(o_menu_item); i++) {
@@ -13,9 +13,10 @@ if (room = rm_menu) {
 				}
 			}
 		}
+		currentsel = 0;
+		menu_item[| currentsel].selected = true;
 	}
-	currentsel = 0;
-	menu_item[| currentsel].selected = true;
+
 }
 
 if (string_count("lvl_",room_get_name(room)) != 0) {
