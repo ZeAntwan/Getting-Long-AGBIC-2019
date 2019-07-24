@@ -9,13 +9,11 @@ else
 }
 if (position == size-1) //LAST
 {
-	cur_color = c_green;
-	cur_sprite = s_dog_ass;
+	cur_img = 3;
 	back = noone;
 }
 else 
 {
-	cur_sprite = s_dog_part_straight;
 	back =  o_dog.snake_item[| position+1];
 	cur_color = c_white;
 }
@@ -49,9 +47,9 @@ else if (front_diff_y != 0)
 }
 	
 if (back != noone) {
-	var back_diff_x = sign(x - back.x);
-	var back_diff_y = sign(y - back.y);
-	var back_diff = [back_diff_x,back_diff_y];
+	//var back_diff_x = sign(x - back.x);
+	//var back_diff_y = sign(y - back.y);
+	//var back_diff = [back_diff_x,back_diff_y];
 	var aim = point_direction(back.x,back.y,x,y)
 	
 	
@@ -71,5 +69,5 @@ if (back != noone) {
 	}
 	
 } else {
-	cur_img = 0;
+
 }

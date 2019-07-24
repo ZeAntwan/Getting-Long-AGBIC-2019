@@ -4,7 +4,6 @@ front = noone;
 back = noone;
 
 cur_img = 0;
-cur_sprite = s_dog_part_straight;
 cur_color = c_white;
 
 save_x = x;

@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "38a98417-8104-486e-b631-0e10486ddfca",
+            "Value": {
+                "id": "e5fdfe48-b18b-45a4-9ec0-b27ecf036180",
+                "resourcePath": "fonts\\fn_main\\fn_main.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "393e98a5-c5cf-46a5-a52b-2eb539d9e048",
             "Value": {
                 "id": "b786bad0-a5a6-4010-adca-b0fa1336dd00",
@@ -260,6 +268,14 @@
                 "id": "85f3ba05-7c28-48bd-8801-bb9f059b1515",
                 "resourcePath": "scripts\\scr_snake_add\\scr_snake_add.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "71cf1e7e-2a4b-4d6e-91b3-511a229daa4e",
+            "Value": {
+                "id": "dde09817-e501-454b-ac75-e24a5a19c021",
+                "resourcePath": "sprites\\s_dog\\s_dog.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -644,6 +660,14 @@
                 "id": "ef24ad47-ce75-428c-92f8-6969fcba2e90",
                 "resourcePath": "views\\e9a13f82-bbc5-4818-9350-f0f6a54370ef.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f18315fe-f85f-4de0-870c-9f23556a0f4c",
+            "Value": {
+                "id": "833a7ba6-605d-41ce-a9cd-d654fd7fd83f",
+                "resourcePath": "sprites\\s_dog_part\\s_dog_part.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
