@@ -22,17 +22,22 @@ if (dog_state != states.freeze) {
 					dog_state = states.reverse;
 					scr_itemcheck(x,y);					
 		} else {
-			if (global.dogblocked) 
+			
+			if (!global.dogblocked) 
 			{
-				//global.dogblocked = false;
-				exit;
-			}
-			else
-			{
-				// Else : Normal Move
 				var col_tile = tilemap_get_at_pixel(col_tilemap, x + dx*tile_width, y + dy*tile_height)
 				var col_part = place_meeting(x + dx*tile_width/2, y + dy*tile_height/2, o_obstacle)
-				if (col_tile == 0 and !col_part) {dog_state = states.walking};
+				// Else : Normal Move
+				if (col_tile == 0 and !col_part) {dog_state = states.walking}
+				else {global.dogblocked = true};
+			}
+			
+			if (global.dogblocked)
+			{
+				// Play sound here
+				audio_play_sound(ouch_sound[irandom(2)],1,false);
+				exit;
+
 			}
 		}
 	}

@@ -8,8 +8,10 @@ if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor key
 		if (dy != 0) {
 		
 				menu_item[| currentsel].selected = false;
-				currentsel+= dy;
-				currentsel = clamp(currentsel,0,ds_list_size(menu_item)-1);
+				if (currentsel != clamp(currentsel+dy,0,ds_list_size(menu_item)-1)) {
+					currentsel = clamp(currentsel+dy,0,ds_list_size(menu_item)-1);
+					audio_play_sound(waf_sounds[irandom(7)],1,false);
+				}
 				menu_item[| currentsel].selected = true;
 			}
 	

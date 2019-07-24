@@ -23,4 +23,5 @@ col_tilemap = layer_tilemap_get_id(col_layer);
 
 global.dogblocked = false;
 
+ouch_sound = [snd_ouch_001,snd_ouch_002,snd_ouch_003]
 
