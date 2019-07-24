@@ -1,18 +1,26 @@
 /// @description Check item and cols
 if (dog_state != states.freeze) {
-	if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor keyboard_check_pressed(vk_up) xor keyboard_check_pressed(vk_down)) {
 	
-		var dx = keyboard_check_pressed(vk_right)-keyboard_check_pressed(vk_left)
-		var dy = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up)
+	var dx = o_input.dx
+	var dy = o_input.dy
 	
+	if (dx != 0 or dy != 0) {
 		next_x = x + dx * tile_width;
 		next_y = y + dy * tile_height;
-	
+		
+		for (var i = 0; i < instance_number(o_ingredient_moving); ++i;)
+		    {
+				var item = instance_find(o_ingredient_moving,i);
+				if (item.future_x = next_x and item.future_y = next_y) {
+					global.dogblocked = true;
+					break;
+				}
+		    }
+		
 		if ((global.movecount > 0) and (array_equals(move_mem[| 0],[next_x,next_y]))) {
 				// If wanted move is the reverse of previous move : Reverse
 					dog_state = states.reverse;
-					scr_itemcheck(x,y);
-					global.dogblocked = false;
+					scr_itemcheck(x,y);					
 		} else {
 			if (global.dogblocked) 
 			{
