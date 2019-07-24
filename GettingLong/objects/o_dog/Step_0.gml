@@ -22,6 +22,8 @@ if (keyboard_check_pressed(vk_space)) {
 	debug_item = !debug_item;
 }
 
+var ref = snake_item[| 0]
+direction = point_direction(ref.x,ref.y,x,y);
 
 
 

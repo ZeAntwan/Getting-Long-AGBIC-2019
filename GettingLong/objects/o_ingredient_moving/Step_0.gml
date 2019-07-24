@@ -9,8 +9,8 @@ if (currentmove > global.movecount) {
 	currentmove = global.movecount;
 }
 
-var dogright = (place_meeting(x+(tile_width*.5),y,o_dog) or place_meeting(x+(tile_width*1.5),y,o_dog) or place_meeting(x+(tile_width/2),y,o_dog_part));
-var dogleft = (place_meeting(x-(tile_width*.5),y,o_dog) or place_meeting(x-(tile_width*1.5),y,o_dog) or place_meeting(x-(tile_width/2),y,o_dog_part));
+var dogright = (place_meeting(x+(tile_width*.5),y,o_dog) or place_meeting(x+(tile_width/2),y,o_dog_part));
+var dogleft = (place_meeting(x-(tile_width*.5),y,o_dog) or place_meeting(x-(tile_width/2),y,o_dog_part));
 var dogtop = (place_meeting(x,y-(tile_height*.5),o_dog) or place_meeting(x,y-(tile_height/2),o_dog_part));
 var dogdown = (place_meeting(x,y+(tile_height*.5),o_dog) or place_meeting(x,y+(tile_height/2),o_dog));
 
