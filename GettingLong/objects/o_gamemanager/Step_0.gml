@@ -11,3 +11,10 @@ if (keyboard_check(vk_escape)) {
 		global.targetlevel = rm_menu;
 	}
 }
+
+// Music Manager
+if (global.currentlevel != rm_menu) {
+	audio_sound_gain(snd_bgm_2, 0, 100);
+} else {
+	audio_sound_gain(snd_bgm_2, .5, 100);
+}
