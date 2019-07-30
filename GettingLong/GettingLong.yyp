@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "1c45e979-f7c6-40e5-a53f-6b7b796fda0a",
-            "Value": {
-                "id": "1186d12f-5865-445b-aa76-45fde6c76b02",
-                "resourcePath": "rooms\\lvl_test1\\lvl_test1.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "21677530-6c01-40a4-8cb8-687d89a1144c",
             "Value": {
                 "id": "91e80af5-f725-4f67-b3f5-4771581b3073",
@@ -215,6 +207,14 @@
             }
         },
         {
+            "Key": "3d266a29-9984-44d9-8cf2-4d7e583a6fd2",
+            "Value": {
+                "id": "b5757131-529f-4e03-8e9d-0af5b4d882a4",
+                "resourcePath": "rooms\\lvl_Intro\\lvl_Intro.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "40b34f5b-d732-41b6-a699-09b8e2b36179",
             "Value": {
                 "id": "aeebf7b5-56c6-48d8-b552-b88949fb96d4",
@@ -276,14 +276,6 @@
                 "id": "64a4e0ca-a9bf-4d44-ae54-c9ca46789554",
                 "resourcePath": "objects\\o_logo\\o_logo.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "546c6f94-e00b-42a1-ab0b-377ecfef9735",
-            "Value": {
-                "id": "4ecdfe48-a4b7-43b8-a66b-a0064ea7eb53",
-                "resourcePath": "rooms\\lvl_test\\lvl_test.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -714,7 +706,7 @@
             "Key": "c672bf26-70f3-4512-abd8-2bf7c4c42e22",
             "Value": {
                 "id": "775e33f9-8d97-4b40-aab3-8aa972e35038",
-                "resourcePath": "rooms\\lvl_Intro2\\lvl_Intro2.yy",
+                "resourcePath": "rooms\\lvl_BoxObstacles\\lvl_BoxObstacles.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -842,7 +834,7 @@
             "Key": "e7f456b4-76b3-4e97-ab2f-4e018a43bab5",
             "Value": {
                 "id": "ff75515e-1634-4641-b45e-0edbcf0fc51c",
-                "resourcePath": "rooms\\lvl_Intro\\lvl_Intro.yy",
+                "resourcePath": "rooms\\lvl_Confined\\lvl_Confined.yy",
                 "resourceType": "GMRoom"
             }
         },

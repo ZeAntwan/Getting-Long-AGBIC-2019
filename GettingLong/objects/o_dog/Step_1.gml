@@ -11,9 +11,17 @@ if (dog_state != states.freeze) {
 		for (var i = 0; i < instance_number(o_ingredient_moving); ++i;)
 		    {
 				var item = instance_find(o_ingredient_moving,i);
-				if (item.future_x = next_x and item.future_y = next_y) {
+				if (item.future_x == next_x and item.future_y == next_y) {
 					global.dogblocked = true;
 					break;
+				}
+				for (var p = 0; p < ds_list_size(snake_item); p++) {
+					var p_x = snake_item[|p].next_x;
+					var p_y = snake_item[|p].next_y
+					if (item.future_x == p_x and item.future_y == p_y) {
+						global.dogblocked = true;
+						break;
+					}
 				}
 		    }
 		

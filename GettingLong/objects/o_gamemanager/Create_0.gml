@@ -25,6 +25,8 @@ global.crumbcount = 0;
 
 
 // Music
+global.bgmtoggle = true;
+
 bgm = audio_create_sync_group(true);
 audio_play_in_sync_group(bgm,snd_bgm_1);
 audio_play_in_sync_group(bgm,snd_bgm_2);

@@ -1,4 +1,8 @@
 /// @description Insérez la description ici
-draw_self();
+if (global.crumbcount == targetcrumb) {
+	image_index = 1
+} else {
+	image_index = 0
+}
 
-direction += 1;
+draw_self();

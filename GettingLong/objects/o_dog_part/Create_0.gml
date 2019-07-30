@@ -10,5 +10,7 @@ save_x = x;
 save_y = y;
 prev_x = save_x;
 prev_y = save_y;
+next_x = x;
+next_y = y;
 
 

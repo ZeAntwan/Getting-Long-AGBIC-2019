@@ -85,6 +85,20 @@
             "value": "180",
             "varName": "rotation",
             "varType": 1
+        },
+        {
+            "id": "ae5adf8b-31dc-4d83-bd33-ac47f82c2335",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "direction",
+            "varType": 0
         }
     ],
     "solid": false,
