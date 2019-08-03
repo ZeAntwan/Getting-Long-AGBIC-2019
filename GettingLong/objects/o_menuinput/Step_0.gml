@@ -1,10 +1,11 @@
 /// @description Insérez la description ici
+
+if (!ds_list_empty(menu_item)) {
 if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor keyboard_check_pressed(vk_up) xor keyboard_check_pressed(vk_down)) {
 	
 	var dx = keyboard_check_pressed(vk_right)-keyboard_check_pressed(vk_left)
 	var dy = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up)
 	
-	if (!ds_list_empty(menu_item)) {
 		if (dy != 0) {
 		
 				menu_item[| currentsel].selected = false;
@@ -26,4 +27,3 @@ if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor key
 		}
 	
 }
-

@@ -9,7 +9,6 @@ else
 }
 if (position == size-1) //LAST
 {
-	cur_img = 3;
 	back = noone;
 }
 else 
@@ -52,22 +51,32 @@ if (back != noone) {
 	//var back_diff = [back_diff_x,back_diff_y];
 	var aim = point_direction(back.x,back.y,x,y)
 	
+	var angledif = angle_difference(aim,direction)
 	
-	switch angle_difference(aim,direction) {
-		case 0:
+	if (angledif == 0 or angledif == 180 or angledif == -180) {
+		if (direction == 0 or direction == 90) {
 			cur_img = 0;
-			break;
-		case 90:
+		} else {
 			cur_img = 1;
-			break;
-		case 180 or -180:
-			cur_img = 0;
-			break;
-		case -90:
+		}
+	} else if (angledif == 90) {
+		if (direction == 0 or direction == 90) {
 			cur_img = 2;
-			break;
+		} else {
+			cur_img = 2;
+		}
+	} else if (angledif == -90) {
+		if (direction == 0 or direction == 90) {
+			cur_img = 3;
+		} else {
+			cur_img = 3;
+		}
 	}
 	
 } else {
-
+	if (direction == 0 or direction = 90) {
+		cur_img = 4;
+	} else {
+		cur_img = 5;
+	}
 }
