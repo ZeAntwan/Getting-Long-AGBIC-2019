@@ -15,6 +15,9 @@ for (var l = room_first; l <= room_last; l++) {
 	
 }
 
+ds_list_add(global.levellist,rm_end);
+ds_list_add(global.levelnames,"End")
+
 // Var setup
 global.currentlevel = noone;
 global.targetlevel = noone;

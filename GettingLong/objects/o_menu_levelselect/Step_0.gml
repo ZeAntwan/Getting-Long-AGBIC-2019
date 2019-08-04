@@ -6,7 +6,7 @@ if (keyboard_check_pressed(vk_right) xor keyboard_check_pressed(vk_left) xor key
 	
 	if (dy != 0) {
 		currentsel+= dy;
-		currentsel = clamp(currentsel,0,ds_list_size(global.levellist)-1);
+		currentsel = clamp(currentsel,0,ds_list_size(global.levellist)-2);
 	}
 	
 	if (dx == 1) {

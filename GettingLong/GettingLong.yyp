@@ -791,6 +791,14 @@
             }
         },
         {
+            "Key": "cc836b94-4f7f-43ca-8a71-f6cc542d8b6e",
+            "Value": {
+                "id": "7248eff1-053e-45c5-816c-e66939a6af80",
+                "resourcePath": "rooms\\lvl_FirstObstacles\\lvl_FirstObstacles.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "2effc406-d03c-40b8-ad39-c47b6aa09ff9",
@@ -812,14 +820,6 @@
                 "id": "30fe942e-ebdb-49bc-978c-11ccf7d1e08a",
                 "resourcePath": "views\\cf51bf33-7f17-440f-a894-54894d59f8ca.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "cfb57b5e-e69f-444e-a5c1-9edac75ac1c9",
-            "Value": {
-                "id": "b2c8f776-e60d-4b85-b82e-42c1c2d12a61",
-                "resourcePath": "rooms\\lvl_Button\\lvl_Button.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
