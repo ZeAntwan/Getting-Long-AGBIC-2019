@@ -1,7 +1,7 @@
 /// @description Insérez la description ici
 
 if (transition) {
-	new_y = 480;
+	new_y = 240;
 } else {
 	new_y = 0;
 }

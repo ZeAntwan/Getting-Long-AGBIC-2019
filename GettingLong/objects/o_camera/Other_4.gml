@@ -10,6 +10,7 @@ view_enabled = true;
 
 //Make view 0 visible
 view_set_visible(0, true);
+view_set_camera(0, camera);
 
 //Set the port bounds of view 0
 view_set_wport(0, 480);

@@ -1,4 +1,4 @@
 gml_pragma("global","MACRO()");
 
-#macro tile_width 32
-#macro tile_height 32
+#macro tile_width 16
+#macro tile_height 16
