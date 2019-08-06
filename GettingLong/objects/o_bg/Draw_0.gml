@@ -3,10 +3,15 @@
 draw_x += 1;
 draw_y -= 1;
 
-if (draw_x >= sprite_width) draw_x = 0;
-if (draw_y <= -sprite_height) draw_y = 0;
+var len = (sprite_width * sqrt(2));
 
-draw_sprite(sprite_index,image_index,x + draw_x,y + draw_y);
-draw_sprite(sprite_index,image_index,(x - sprite_width) + draw_x,y + draw_y);
-draw_sprite(sprite_index,image_index,x + draw_x,(y + sprite_height) + draw_y);
-draw_sprite(sprite_index,image_index,(x - sprite_width) + draw_x,(y + sprite_height) + draw_y);
+if (draw_x >= len/2) draw_x = 0;
+if (draw_y <= -len/2) draw_y = 0;
+
+draw_sprite_ext(sprite_index,image_index,x + draw_x,y + draw_y,1,1,45,c_white,1);
+draw_sprite_ext(sprite_index,image_index,(x - len/2) + draw_x,(y + len/2) + draw_y,1,1,45,c_white,1);
+draw_sprite_ext(sprite_index,image_index,(x - len) + draw_x,(y + len) + draw_y,1,1,45,c_white,1);
+draw_sprite_ext(sprite_index,image_index,(x) + draw_x,(y + len) + draw_y,1,1,45,c_white,1);
+draw_sprite_ext(sprite_index,image_index,(x + len/2) + draw_x,(y + len/2) + draw_y,1,1,45,c_white,1);
+draw_sprite_ext(sprite_index,image_index,(x + len) + draw_x,(y + len) + draw_y,1,1,45,c_white,1);
+draw_sprite_ext(sprite_index,image_index,(x) + draw_x,(y + len) + draw_y,1,1,45,c_white,1);
