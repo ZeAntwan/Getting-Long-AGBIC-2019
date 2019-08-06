@@ -34,3 +34,4 @@ if (global.bgmtoggle) {
 		audio_stop_sync_group(bgm)
 	}	
 }
+

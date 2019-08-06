@@ -36,3 +36,6 @@ audio_play_in_sync_group(bgm,snd_bgm_2);
 audio_play_in_sync_group(bgm,snd_bgm_3);
 
 audio_start_sync_group(bgm);
+
+
+// GUI

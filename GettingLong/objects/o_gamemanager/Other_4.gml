@@ -12,3 +12,10 @@ global.currentlevel = room;
 
 global.crumbcount = 0;
 global.movecount = 0;
+
+// Curmb Count
+if (instance_exists(o_crumb)) {
+	global.targetcrumb = instance_number(o_crumb)
+} else {
+	global.targetcrumb = 0
+}
