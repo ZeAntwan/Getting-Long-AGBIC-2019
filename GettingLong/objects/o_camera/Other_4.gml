@@ -13,8 +13,8 @@ view_set_visible(0, true);
 view_set_camera(0, camera);
 
 //Set the port bounds of view 0
-view_set_wport(0, 480);
-view_set_hport(0, 480);
+view_set_wport(0, 640);
+view_set_hport(0, 640);
 
 if (!cameracheck) {
 //Resize and center

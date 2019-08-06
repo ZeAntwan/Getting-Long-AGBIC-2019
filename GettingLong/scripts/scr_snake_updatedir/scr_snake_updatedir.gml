@@ -60,23 +60,11 @@ if (back != noone) {
 			cur_img = 1;
 		}
 	} else if (angledif == 90) {
-		if (direction == 0 or direction == 90) {
-			cur_img = 2;
-		} else {
-			cur_img = 2;
-		}
+		cur_img = 2;
 	} else if (angledif == -90) {
-		if (direction == 0 or direction == 90) {
-			cur_img = 3;
-		} else {
-			cur_img = 3;
-		}
+		cur_img = 3;
 	}
 	
 } else {
-	if (direction == 0 or direction = 90) {
 		cur_img = 4;
-	} else {
-		cur_img = 5;
-	}
 }
