@@ -33,11 +33,30 @@ if (dog_state != states.freeze) {
 			
 			if (!global.dogblocked) 
 			{
-				var col_tile = tilemap_get_at_pixel(col_tilemap, x + dx*tile_width, y + dy*tile_height)
-				var col_part = place_meeting(x + dx*tile_width/2, y + dy*tile_height/2, o_obstacle)
+				var col_tile = tilemap_get_at_pixel(col_tilemap, next_x, next_y)
+				var col_part = instance_position(next_x, next_y, o_obstacle)
 				// Else : Normal Move
-				if (col_tile == 0 and !col_part) {dog_state = states.walking}
-				else {global.dogblocked = true};
+				if (col_tile == 0 and (col_part == noone or !col_part.state)) {
+					var btn_check = instance_position(next_x, next_y, o_button)
+					if (btn_check != noone) {
+						for (var i=0; i <= instance_number(o_ingredient_door) -1; i++) {
+							var inst = instance_find(o_ingredient_door,i);
+							for (var p = 0; p < ds_list_size(snake_item); p++) {
+								if (inst.x = snake_item[|p].x and inst.y = snake_item[|p].y) {
+									global.dogblocked = true
+									break;
+								} else {
+									//dog_state = states.walking
+								};
+							}
+						}
+					} else {
+						
+					}
+				}
+				else {
+					global.dogblocked = true
+				};
 			}
 			
 			if (global.dogblocked)
@@ -46,6 +65,8 @@ if (dog_state != states.freeze) {
 				audio_play_sound(ouch_sound[irandom(2)],1,false);
 				exit;
 
+			} else {
+				dog_state = states.walking
 			}
 		}
 	}

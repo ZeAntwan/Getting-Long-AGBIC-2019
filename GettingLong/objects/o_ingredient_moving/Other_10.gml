@@ -1,6 +1,6 @@
 /// @description ACTION
 
-ds_stack_push(memory,[x,y]);
+ds_stack_push(memory,[x,y,direction]);
 
 var right = !place_free(x+(tile_width/2),y) or (tilemap_get_at_pixel(col_tilemap, x + (tile_width), y) > 0)
 var left = !place_free(x-(tile_width/2),y) or (tilemap_get_at_pixel(col_tilemap, x - (tile_width), y) > 0)

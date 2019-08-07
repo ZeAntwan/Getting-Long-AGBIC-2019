@@ -2,3 +2,5 @@
 var currentindex = ds_list_find_index(global.levellist,room)
 
 global.targetlevel = global.levellist[| currentindex+1];
+
+alarm[0] = -1;
