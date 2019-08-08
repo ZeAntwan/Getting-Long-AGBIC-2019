@@ -12,7 +12,7 @@ draw_set_font(fn_gui);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(blucolor);
-if (room != rm_menu and room != rm_levelselect and room != rm_credits and room != rm_end) {
+if (room != rm_menu and room != rm_levelselect and room != rm_end) {
 	
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);
