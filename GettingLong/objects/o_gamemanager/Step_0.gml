@@ -15,7 +15,7 @@ if (keyboard_check_pressed(vk_escape)) {
 }
 
 // Music Manager
-if (global.currentlevel != rm_menu) {
+if (global.currentlevel != rm_menu and global.currentlevel != rm_end) {
 	audio_sound_gain(snd_bgm_2, 0, 100);
 } else {
 	audio_sound_gain(snd_bgm_2, .5, 100);
