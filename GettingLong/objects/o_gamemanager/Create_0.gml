@@ -39,3 +39,4 @@ audio_start_sync_group(bgm);
 
 
 // GUI
+blucolor = make_color_rgb(88,165,177)

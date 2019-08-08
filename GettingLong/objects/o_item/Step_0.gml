@@ -6,7 +6,7 @@ if (state == itemstate.idle) {
 
 if (state == itemstate.using) {
 	event_user(0);
-	state = itemstate.used
+	
 }
 
 if (state == itemstate.used) {
