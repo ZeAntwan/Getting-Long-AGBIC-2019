@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_obstacle",
     "eventList": [
-        
+        {
+            "id": "111e9967-c953-407a-af53-16ff81314c70",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 12,
+            "eventtype": 7,
+            "m_owner": "d10de261-9e92-4b36-bfa9-b45d35089bd5"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
