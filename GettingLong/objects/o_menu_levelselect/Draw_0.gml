@@ -1,7 +1,7 @@
 /// @description Insérez la description ici
 draw_self();
 
-var levelname = "Level " + string(currentsel)
+var levelname = "Level " + string(currentsel+1)
 
 var t_w = string_width(levelname) + 15
 var t_h = sprite_height
