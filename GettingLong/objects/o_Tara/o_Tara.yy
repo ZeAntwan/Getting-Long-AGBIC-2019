@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_Tara",
     "eventList": [
-        
+        {
+            "id": "db722396-e2c9-4301-8a6b-426458368b46",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "ff1952b4-303a-49e7-9cbb-3c532212c8b3"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

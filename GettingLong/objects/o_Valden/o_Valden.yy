@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_Valden",
     "eventList": [
-        
+        {
+            "id": "da02ee6f-8104-43a6-9ebd-d75249a4c520",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "3af44e50-0e38-401e-9366-e17f83aed5ea"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

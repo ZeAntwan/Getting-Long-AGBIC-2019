@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_Antwan",
     "eventList": [
-        
+        {
+            "id": "1caaf0b7-e48b-4349-b401-c7408e6c4888",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "a5830717-ccea-4585-ac9d-bcb7bf1a46db"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
