@@ -1,6 +1,15 @@
 /// @description REVERSE
 var prev_c = ds_stack_pop(memory);
 
+// Check for item except crumb
+var col_item = instance_place(x, y, o_button);
+
+if (col_item != noone) {
+	if (col_item.state == itemstate.used and col_item.move_used-1 == global.movecount) {
+		col_item.state = itemstate.reverse;
+	}
+} 
+
 future_x = x;
 future_y = y;
 
@@ -13,3 +22,6 @@ x = prev_x;
 y = prev_y;
 
 direction = prev_d
+
+
+

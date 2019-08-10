@@ -7,13 +7,13 @@ var _y = argument1;
 
 	// Add snake part if ok
 	if (col_item != noone) {
-		if (dog_state == states.walking) {
+		if (o_dog.dog_state == states.walking) {
 			if (col_item.state == itemstate.idle) {
 				col_item.state = itemstate.using;
 				col_item.move_used = global.movecount;
 			}
 		}
-		if (dog_state == states.reverse) {
+		if (o_dog.dog_state == states.reverse) {
 			if (col_item.state == itemstate.used and col_item.move_used == global.movecount) {
 				col_item.state = itemstate.reverse;
 			}

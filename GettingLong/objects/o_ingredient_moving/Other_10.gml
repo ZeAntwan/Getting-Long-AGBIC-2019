@@ -51,3 +51,13 @@ switch direction {
 		future_y = y + tile_height; 
 		break;
 }
+
+// Check for item except crumb
+var col_item = instance_place(x, y, o_button);
+
+if (col_item != noone) {
+	if (col_item.state == itemstate.idle) {
+		col_item.state = itemstate.using;
+		col_item.move_used = global.movecount;
+	}
+}

@@ -14,11 +14,22 @@ if (keyboard_check_pressed(vk_escape)) {
 	}
 }
 
+if (keyboard_check_pressed(ord("R"))) {
+	if (room != rm_menu) {
+		room_restart();
+	}
+}
+
 // Music Manager
-if (global.currentlevel != rm_menu and global.currentlevel != rm_end) {
+if (global.currentlevel != rm_menu and global.currentlevel != rm_end and global.currentlevel != rm_levelselect) {
 	audio_sound_gain(snd_bgm_2, 0, 100);
+	audio_sound_gain(snd_bgm_3,(global.crumbcount/global.targetcrumb),50);
+	if (global.crumbcount == global.targetcrumb) {
+		audio_sound_gain(snd_bgm_2, .4, 50);
+	}
 } else {
-	audio_sound_gain(snd_bgm_2, .5, 100);
+	audio_sound_gain(snd_bgm_2, .4, 100);
+	audio_sound_gain(snd_bgm_3, 1, 100);
 }
 
 if (keyboard_check_pressed(ord("M"))) {
