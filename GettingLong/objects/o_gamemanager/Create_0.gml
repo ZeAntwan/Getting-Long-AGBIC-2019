@@ -29,14 +29,16 @@ global.crumbcount = 0;
 
 // Music
 global.bgmtoggle = true;
+if (browser_not_a_browser) {
+	bgm = audio_create_sync_group(true);
+	audio_play_in_sync_group(bgm,snd_bgm_1);
+	audio_play_in_sync_group(bgm,snd_bgm_2);
+	audio_play_in_sync_group(bgm,snd_bgm_3);
 
-bgm = audio_create_sync_group(true);
-audio_play_in_sync_group(bgm,snd_bgm_1);
-audio_play_in_sync_group(bgm,snd_bgm_2);
-audio_play_in_sync_group(bgm,snd_bgm_3);
-
-audio_start_sync_group(bgm);
-
+	audio_start_sync_group(bgm);
+} else {
+	bgm = audio_play_sound(snd_full,1,true)
+}
 
 // GUI
 blucolor = make_color_rgb(88,165,177)
